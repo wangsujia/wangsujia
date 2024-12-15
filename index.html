@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto light"><head>
+  <title>Sujia</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Homepage of Sujia" />
+<meta name="author" content="Darshan Baral and Sujia" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.139.3" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+    
+  
+  <link href="/main.min.d85bfdb3775a4567d00870d3a6dacc32da974456c491fc1ce202a0ff40e9c1ee.css" rel="stylesheet" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+      <div class="flex flex-col justify-center">
+        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+  <img
+    class="rounded rounded-full"
+    src="/images/img2.jpg"
+    alt="Darshan Baral and Sujia"
+    style="max-width: 250px"
+  />
+</div>
+</div>
+        <div class="p-2 text-center">
+          <h1 class="mb-0">Sujia Wang</h1>
+<h2 class="mb-0"></h2>
+<h3 class="mb-4">Shenzhen, China</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://scholar.google.com/citations?user=oWOc7sEAAAAJ&amp;hl=zh-CN">
+      <i class="mt-1 ai ai-google-scholar"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="wangsujia0103@gmail.com">
+      <i class="mt-1 fas fa-envelope"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.example.com/path/to/your-cv.pdf">
+      <i class="mt-1 fas fa-file-pdf"></i>
+    </a>
+  </div>
+  
+</div>
+ <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  pt-2 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://www.cloudflare.com/">Cloudflare</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion active">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  Hi, I am Sujia Wang, a third-year master&rsquo;s student in the i-VisionGroup at Shenzhen, Tsinghua University, under the guidance of Professor <a href="https://andytang15.github.io/">Yansong Tang</a>. In 2022, I earned my B.S. degree majoring in Mathematics and Applied Mathematics at Northeastern University. I am interested in Computer Vision and Reliable AI.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">M.Eng. majoring in Data Science and Information Technology</h4>
+<p >2022 - 2025 &middot; Tsinghua University</p>
+
+
+
+<h4 style="text-decoration: underline;">B.S. Majoring in Mathematics and Applied Mathematics</h4>
+<p >2018 - 2022 &middot; Northeastern University</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-book"></i>
+          Publications</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+  
+    
+    <h4 style="text-decoration: underline;">Conferences</h4>
+      
+        <div class="publication-item">
+          
+          
+            <div class="publication-image">
+              
+              <img src="/images/LOGO.png" alt="LOGO: A Long-Form Video Dataset for Group Action Quality Assessment" class="img-fluid rounded">
+            </div>
+          
+          
+          <div class="publication-content">
+            <p class="title-author">
+              <strong>LOGO: A Long-Form Video Dataset for Group Action Quality Assessment</strong> <br>
+              <span class="authors">Shiyi Zhang, Wenxun Dai, Sujia Wang, Xiangwei Shen, Jiwen Lu, Jie Zhou, and Yansong Tang.</span>
+            </p>
+            <p class="details">
+              <strong>Date:</strong> 2023 <br>
+              <strong>Journal:</strong> CVPR <br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_LOGO_A_Long-Form_Video_Dataset_for_Group_Action_Quality_Assessment_CVPR_2023_paper.pdf" target="_blank" class="btn btn-link">Read Paper</a>
+            </p>
+          </div>
+        </div>
+      
+      
+        <div class="publication-item">
+          
+          
+            <div class="publication-image">
+              
+              <img src="/images/VCIP.png" alt="Localization-Aware Multi-Scale Representation Learning for Repetitive Action Counting" class="img-fluid rounded">
+            </div>
+          
+          
+          <div class="publication-content">
+            <p class="title-author">
+              <strong>Localization-Aware Multi-Scale Representation Learning for Repetitive Action Counting</strong> <br>
+              <span class="authors">Sujia Wang*, Xiangwei Shen*, Yansong Tang, Xin Dong, Wenjia Geng, and Lei Chen.</span>
+            </p>
+            <p class="details">
+              <strong>Date:</strong> 2024 <br>
+              <strong>Journal:</strong> VCIP (Oral) <br>
+              <a href="#" target="_blank" class="btn btn-link">Read Paper</a>
+            </p>
+          </div>
+        </div>
+      
+      
+        <div class="publication-item">
+          
+          
+            <div class="publication-image">
+              
+              <img src="/images/AAAI.png" alt="Learning Multi-Scale VideoText Correspondence for Weakly Supervised Tasks" class="img-fluid rounded">
+            </div>
+          
+          
+          <div class="publication-content">
+            <p class="title-author">
+              <strong>Learning Multi-Scale VideoText Correspondence for Weakly Supervised Tasks</strong> <br>
+              <span class="authors">Wenjia Geng, Yong Liu, Lei Chen, Sujia Wang, Jie Zhou, and Yansong Tang. </span>
+            </p>
+            <p class="details">
+              <strong>Date:</strong> 2023 <br>
+              <strong>Journal:</strong> AAAI <br>
+              <a href="https://ojs.aaai.org/index.php/AAAI/article/view/27959" target="_blank" class="btn btn-link">Read Paper</a>
+            </p>
+          </div>
+        </div>
+      
+  
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-gamepad"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+    <li class="list-unstyled mb-4">
+      
+      <h4>I like doing Sports, Music, and Photography. You can view some of my music clips on <a href="https://space.bilibili.com/394910130?spm_id_from=333.1007.0.0">Bilibili</a>.</h4>
+
+      
+      
+        <div class="image-gallery d-flex overflow-auto">
+          
+            
+            <img src="/hobbies/bad1.jpg" alt="Image for bad1.jpg" class="gallery-image mr-3">
+          
+            
+            <img src="/hobbies/bad2.jpg" alt="Image for bad2.jpg" class="gallery-image mr-3">
+          
+            
+            <img src="/hobbies/bad3.jpg" alt="Image for bad3.jpg" class="gallery-image mr-3">
+          
+            
+            <img src="/hobbies/music1.jpg" alt="Image for music1.jpg" class="gallery-image mr-3">
+          
+            
+            <img src="/hobbies/photo1.jpg" alt="Image for photo1.jpg" class="gallery-image mr-3">
+          
+            
+            <img src="/hobbies/photo2.jpg" alt="Image for photo2.jpg" class="gallery-image mr-3">
+          
+        </div>
+      
+    </li>
+  
+</ul>
+
+
+<style>
+  .image-gallery {
+    display: flex;  
+    overflow-x: auto;  
+    padding-bottom: 10px;  
+  }
+
+  .gallery-image {
+    max-width: 100%;  
+    height: auto;  
+    margin-right: 15px;  
+    border-radius: 8px;  
+    object-fit: contain;  
+    max-height: 300px;  
+  }
+</style>
+</div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
